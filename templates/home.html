@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Mi Home {%  endblock title %}
+
+
+{% block content %}
+<h1>{{ name }}</h1>
+<h1> mi name {{ my_name }}</h1>
+<ul>
+{% for lt in lista  %}
+<li> {{ lt }}  </li>
+{% endfor %}
+</ul>
+Extends muestra todo lo q esta en base, lo unico q 
+no se extiende son los block
+se usa jinja para incorporar variables
+{%  endblock content %}

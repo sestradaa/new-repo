@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %} {{ post['id'] }} {% endblock %}
+
+
+{% block content %}
+<h1 class="my-4">{{ post['title'] }}</h1>
+<h1>{{ post['content'] }}</h1>
+<h1>{{ post['created'] }}</h1>
+<a href="{{ url_for('get_all_post') }}" class="btn btn-primary" role="button">voler</a>
+{% endblock content %}
